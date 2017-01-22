@@ -12,8 +12,8 @@
   <title>Wing</title>
 
   <!-- Link to CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="../node_modules/wingcss/dist/wing.min.css" /> -->
-  <link rel="stylesheet" type="text/css" href="./wingcss/dist/wing.min.css" />
+  <link rel="stylesheet" href="./wingcss/dist/wing.min.css" />
+  <link rel="stylesheet" href="./style.css" />
   <!--<link rel="shortcut icon" href="./favicon.ico" />-->
 
   <!-- Google Analytics -->
@@ -31,37 +31,9 @@
 </head>
 
 <body>
-<div class="button_container">
-  <span class="top bar"></span>
-  <span class="middle bar"></span>
-  <span class="bottom bar"></span>
-</div>
 
-<div class="overlay">
-  <div class="nav">
-    <ul>
-      <li><a href="#hero" data-speed="1000" class="menuLink scroll">Home</a></li>
-      <li><a href="#about" data-speed="1000" class="menuLink scroll">About</a></li>
-      <li><a href="#docs" data-speed="1000" class="menuLink scroll">Docs</a></li>
-      <!--<li><a href="#examples" data-speed="1000" class="menuLink scroll">Examples</a></li>-->
-    </ul>
-  </div>
-</div>
+  <% include ../partials/nav.ejs %>
 
-<img src="./img/wing.svg" id="logo"/>
-
-      <section id="hero" class="text-center">
-          <div class="hero-content center">
-              <div>
-                  <h1 id="wingHead">Wing</h1>
-                  <p>Minimal CSS Framework</p>
-                  <p><em>v0.1.9</em></p>
-                  <br/>
-                  <a href="#about" class="scroll" data-scroll="1000"><button class="btn btn-outline">check it out</button></a>
-              </div>
-          </div>
-          <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=usewingml" id="_carbonads_js"></script>
-      </section>
       <section id="about" class="text-center">
           <div class="container">
                 <h5>Is Wing for You?</h5>
